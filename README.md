@@ -13,22 +13,22 @@ Assume that all input files are in the correct format. A randomly generated inpu
 
 ### Question 1: Empirical Comparison
 
-Files can be found in the data folder labeled file1 to file 12. 
+Files can be found in the data folder labeled 1 to 12. 
 ![Runtime Chart](chart.png)
 
-| File | K | String Length | Runtime (ms) |
-|---|---|---|---|
-| 1 | 25 | 50 | 1.551 |
-| 2 | 25 | 75 | 2.27 |
-| 3 | 25 | 100 | 2.528 |
-| 4 | 25 | 25 | 1.512 |
-| 5 | 5 | 50 | 1.474 |
-| 6 | 10 | 50 | 1.696 |
-| 7 | 15 | 75 | 2.349 |
-| 8 | 30 | 25 | 1.505 |
-| 9 | 30 | 50 | 2.137 |
-| 10 | 30 | 100 | 2.49 |
-| 11 | 25 | 200 | 5.574 |
-| 12 | 25 | 500 | 30.943 |
+| File | Length | Runtime (ms) |
+|------|--------|--------------|
+| 1    | 25     | 1.655        |
+| 2    | 30     | 1.39         |
+| 3    | 40     | 1.683        |
+| 4    | 50     | 1.509        |
+| 5    | 75     | 2.224        |
+| 6    | 100    | 2.48         |
+| 7    | 150    | 3.888        |
+| 8    | 200    | 5.827        |
+| 9    | 250    | 8.217        |
+| 10   | 300    | 11.135       |
+| 11   | 400    | 19.945       |
+| 12   | 500    | 30.729       |
 
 
