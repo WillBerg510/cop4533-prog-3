@@ -13,7 +13,7 @@ Assume that all input files are in the correct format. A randomly generated inpu
 
 ### Question 1: Empirical Comparison
 
-Files can be found in the data folder labeled file1 to file 12.
+Files can be found in the data folder labeled file1 to file 12. 
 ![Runtime Chart](chart.png)
 
 | File | K | String Length | Runtime (ms) |
@@ -25,7 +25,7 @@ Files can be found in the data folder labeled file1 to file 12.
 | 5 | 5 | 50 | 1.474 |
 | 6 | 10 | 50 | 1.696 |
 | 7 | 15 | 75 | 2.349 |
-| 8 | 30 | 23 | 1.505 |
+| 8 | 30 | 25 | 1.505 |
 | 9 | 30 | 50 | 2.137 |
 | 10 | 30 | 100 | 2.49 |
 | 11 | 25 | 200 | 5.574 |
