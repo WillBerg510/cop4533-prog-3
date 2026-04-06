@@ -54,9 +54,9 @@ if __name__ == "__main__":
         output = highest_value_lcs(alphabet, A, B)
 
         # write solution to output file
-        with open(f"../data/{file_name}.out", "w") as file:
-            file.write(f"{output[0]}\n")
-            file.write(output[1])
+        with open(f"../data/{file_name}.out", "w") as output_file:
+            output_file.write(f"{output[0]}\n")
+            output_file.write(output[1])
 
             print(f"Output file data/{file_name}.out created.")
 
