@@ -1,3 +1,5 @@
+import time
+
 def find_solution_sequence(m, a, b, i, j):
     if i == 0 or j == 0:
         return ""
@@ -35,8 +37,11 @@ def highest_value_lcs(values, a, b):
 if __name__ == "__main__":
     file_name = input("Input file name without extension: ")
 
+    # start recording runtime
+    start_time = time.perf_counter()
+
     # read file
-    with open(f"../data/{file_name}.in", "r") as file:
+    with open(f"../data/input/{file_name}.in", "r") as file:
         k = int(file.readline())
         alphabet = {}
 
@@ -54,10 +59,13 @@ if __name__ == "__main__":
         output = highest_value_lcs(alphabet, A, B)
 
         # write solution to output file
-        with open(f"../data/{file_name}.out", "w") as output_file:
+        with open(f"../data/output/{file_name}.out", "w") as output_file:
             output_file.write(f"{output[0]}\n")
             output_file.write(output[1])
 
             print(f"Output file data/{file_name}.out created.")
+
+            end_time = time.perf_counter()
+            print(f"Runtime: {(end_time - start_time) * 1000:.3f} ms.")
 
 

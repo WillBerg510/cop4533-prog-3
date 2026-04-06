@@ -12,7 +12,7 @@ length = int(length)
 
 file_name = input("Input file name without extension: ")
 
-with open(f"../data/{file_name}.in", "w") as file:
+with open(f"../data/input/{file_name}.in", "w") as file:
   file.write(f"{k}\n")
   for i in range(0, k):
     file.write(f"{chr(97 + i)} {random.randint(0, 30)}\n")
