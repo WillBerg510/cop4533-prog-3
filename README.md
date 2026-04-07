@@ -16,6 +16,8 @@ Assume that all input files are in the correct format. A randomly generated inpu
 Files can be found in the data folder labeled 1 to 12. 
 ![Runtime Chart](chart.png)
 
+All files have k = 26.
+
 | File | Length | Runtime (ms) |
 |------|--------|--------------|
 | 1    | 25     | 1.655        |
