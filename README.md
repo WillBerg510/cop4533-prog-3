@@ -32,3 +32,18 @@ Files can be found in the data folder labeled 1 to 12.
 | 12   | 500    | 30.729       |
 
 
+### Question 2: Recurrence Equation
+
+$$
+OPT(i, j) = \begin{cases}
+0 & i = 0 & or & j = 0\\
+v(A_i) + OPT(i-1,j-1) & A_i = B_j\\
+max(OPT(i-1,j),OPT(i,j-1)) & otherwise\\
+\end{cases}
+$$
+
+The indices i and j represent the last characters of the current strings being compared. When the current index in either string is 0, there are no characters from that string to select from. As such, there is no subsequence that can be formed from that string, and there thus cannot be a common subsequence made between the two strings. This gives base cases of a value of zero for $i = 0$ or $j = 0$.
+
+It is given that character values are nonnegative. Assuming any other subsequence that can be selected, it will always be possible to add the last character of a string without restricting access to another character and decreasing the subsequence's total value. As long as the character's value is greater than zero, the subsequence with the last character added will have a higher total value than any subsequence without it. So, the algorithm selects the last character from the two strings whenever they are a match. After selecting the last character from both strings, neither string can use that character anymore. So, the value of that character is added to the maximum subsequence value using both strings without their final character. This gives the case of $v(A_i) + OPT(i-1,j-1)$ for $A_i = B_j$.
+
+When the last characters of the strings are not the same, then at least one of the two characters will not be used in the common subsequence. In the case that one of the two last characters is used, it will match with a character from the other string that comes before the other string's last character. Here, there is no way for the other string's last character to match with a character from the original string without crossing over this relationship. Therefore, the common subsequence of maximum value will come from removing one of the two last characters and using the subsequence from the remaining characters. Both last characters are tested, and out of these two, the subsequence of maximum value must be chosen. This gives the case of $max(OPT(i-1,j),OPT(i,j-1))$ for the remaining cases.
