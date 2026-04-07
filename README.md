@@ -7,7 +7,7 @@ Instructions: clone repo into an empty working directory, run main.py and enter 
 ```
 cd src
 python main.py
-Enter name of data file without extension: test
+Input file name without extension: test
 ```
 Assume that all input files are in the correct format. A randomly generated input file can be created by running input-generator.py and following the instructions.
 
